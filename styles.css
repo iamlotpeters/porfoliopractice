@@ -16,7 +16,7 @@
   align-items: center;
   width: 100%;
   background-color: rgb(129, 1, 1);
-  border-bottom-right-radius: 200px;
+  border-bottom-right-radius: 130px;
   padding-bottom: 80px;
 }
 .logo h1{
@@ -117,7 +117,7 @@
   width: 20%;
   margin-bottom: 10px;
 }
-.features-content .features-items p{
+.features-items p{
   margin-top: 20px;
   width: 100%;
   line-height: 20pt;
@@ -128,13 +128,13 @@
 
 .profile{
   width: 70%;
+  margin-top: 80px;
 }
-.profile .profile-title h1{
+.profile-title h1{
   text-align: center;
-  margin-top: 150px;
   font-weight: 800;
 }
-.profile .profile-title p{
+.profile-title p{
   margin-top: 25px;
   font-size: 16px;
   font-weight: 600;
@@ -153,7 +153,6 @@
 }
 .address .address-title h1{
   text-align: center;
-  margin-top: 50px;
   font-weight: 800;
 }
 .address .address-title span{
@@ -165,10 +164,11 @@
   grid-template-columns:repeat(4, 1fr);
   margin-top: 50px;
   gap: 40px;
+  position: relative;
 }
 .address-content .address-items{
   box-shadow: 15px 10px 15px 10px whitesmoke;
-  padding: 50px;
+  padding: 30px;
   text-align: center;
 }
 .address-items h1{
@@ -194,4 +194,215 @@ footer p{
 }
 footer span{
   color: brown;
+}
+
+
+
+
+
+@media screen and (max-width: 1036px) {
+  .address-content{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container .menu{
+    display: none;
+  }
+  
+
+  .showcase{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .showcase-left{
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .showcase-left p{
+    width: 100%;
+  }
+  .showcase-right{
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .showcase-right img{
+    width: 400px;
+    height: 390px;
+    border: 10px solid whitesmoke;
+  }
+
+
+  
+  .features-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .address-content{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .logo h1{
+    font-size: 18px;
+    font-weight: 900;
+  }
+  .showcase{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .showcase-left h1{
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .showcase-left p{
+    font-size: 10px;
+    line-height: 18px;
+    margin-top: 18px;
+  }
+  .showcase-left button{
+    width: 80%;
+    font-size: 10px;
+    padding: 18px;
+  }
+  .showcase-right img{
+    width: 200px;
+    height: 200px;
+  }
+  
+
+  .features-content{
+    margin-top: 20px;
+  }
+  .features-title h1{
+    font-size: 25px;
+  }
+  .features-items{
+    width: 100%;
+  }
+  .features-items h1{
+    font-size: 20px;
+  }
+  .features-items p{
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+
+  .profile{
+    margin-top: 50px;
+  }
+  .profile-title p{
+    font-size: 12px;
+    text-align: center;
+  }
+  .profile-title h1{
+    font-size: 25px;
+  }
+
+
+  .address{
+    margin-top: 50px;
+  }
+
+  .address-content{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .address-items h1{
+    font-size: 20px;
+  }
+  .address-items p{
+    font-size: 12px;
+  }
+  .address-title h1{
+    font-size: 25px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .logo h1{
+    font-size: 18px;
+    font-weight: 900;
+  }
+  .showcase{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .showcase-left h1{
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .showcase-left p{
+    font-size: 10px;
+    line-height: 18px;
+    margin-top: 18px;
+  }
+  .showcase-left button{
+    width: 80%;
+    font-size: 10px;
+    padding: 18px;
+  }
+  .showcase-right img{
+    width: 200px;
+    height: 200px;
+  }
+  
+
+  .features-content{
+    margin-top: 20px;
+  }
+  .features-title h1{
+    font-size: 25px;
+  }
+  .features-items{
+    width: 100%;
+  }
+  .features-items h1{
+    font-size: 20px;
+  }
+  .features-items p{
+    font-size: 10px;
+    line-height: 18px;
+  }
+
+
+  .profile{
+    margin-top: 50px;
+  }
+  .profile-title p{
+    font-size: 12px;
+    text-align: center;
+  }
+  .profile-title h1{
+    font-size: 25px;
+  }
+
+
+  .address{
+    margin-top: 50px;
+  }
+
+  .address-content{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .address-items h1{
+    font-size: 20px;
+  }
+  .address-items p{
+    font-size: 12px;
+  }
+  .address-title h1{
+    font-size: 25px;
+  }
 }
